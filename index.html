@@ -33,35 +33,35 @@
     	<h1 class="visually-hidden">Магазин Глейси</h1>
     	<div class="slider">
     		
-    		<!--слайдер -->
+    		<!--слайдер, кнопка Давайте оба, одинаковая на всех страницах слайдера, класс? -->
     		
     			<input checked type="radio" name="slider" id="switch1">
     			<input type="radio" name="slider" id="switch2">
     			<input type="radio" name="slider" id="switch3">
 
-    			<img src=img/ice1.png width="" height="" alt="Крем-брюле и пломбир с малиновым джемом">
+    			<img src=img/ice1.png width="" height="" alt="Крем-брюле и пломбир с малиновым джемом"> <!-- размер?-->
     			<p>Крем-брюле и пломбир с малиновым джемом</p>
-    			<button class="button">Давайте оба!</button>
+    			<button class="button slider-button">Давайте оба!</button>
                 			
     			<img src=img/ice2.png width="" height="" alt="Шоколадный пломбир и лимонный сорбет">
     			<p>Шоколадный пломбир и лимонный сорбет</p>
-    			<button class="button">Давайте оба!</button>
+    			<button class="button slider-button">Давайте оба!</button>
     			
     			<img src=img/ice3.png width="" height="" alt="Пломбир с помадкой и клубничный щербет">
     			<p>Пломбир с помадкой и клубничный щербет</p>
-    			<button class="button">Давайте оба!</button>
+    			<button class="button slider-button">Давайте оба!</button>
     		 		
     	</div>
     	<div class="banner">
     	<section class="razz">
     		<h3>Малинка даром!</h3>
     		<p> При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно. </p>
-    		<button class="button">Хочу варенье!</button>
+    		<button class="button banner-button">Хочу варенье!</button>
     	</section>
     	<section class="choco">
     		<h3>Шоколадки даром!</h3>
     		<p> При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-    		<button class="button">Хочу шоколадки!</button>
+    		<button class="button banner-button">Хочу шоколадки!</button>
     	</section>
         </div>
         <div class="product">
@@ -116,7 +116,7 @@
     	<div class="dispatch">
     		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
     		<form></form>
-    		<button class="button">Отправить</button>
+    		<button class="button dispatch-botton">Отправить</button>
     	</div>
         </div>
         <div class="contact-info">
@@ -130,7 +130,7 @@
     			<b>8 812 450-25-25</b><br>
     			(с 10 до 20 ежедневно)
     		</p>
-    		<button class="button" href="contacts.html">Форма обратной связи</button>
+    		<button class="button contacts-botton" href="contacts.html">Форма обратной связи</button>
   	  	</section>
   	  	</div>
 
@@ -157,8 +157,26 @@
     <section class="modal-login">
     	<h2>Личный кабинет </h2>
     	<p> Введите логин и пароль</p>
-    	<!-- форма -->
-    	<span class="modal-close">x</span>
+    	<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    	<p>
+    		<label class="visually-hidden" for="user-login">Логин</label>
+    		<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+    	</p>
+    	<p>
+    		<label class="visually-hidden" for="user-password">Пароль</label>
+    		<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+    	</p>
+    	<p class="info-login-password">
+    		<label class="login-chckbox">
+    			<input type="checbox" name="remember" class="visually-hidden" id="info-login-password"> >
+    		    <label for="info-login-password">Запомните меня</label> <!-- нужно? -->
+            </label>
+    	<a class="restore" href="#">Забыли пароль? </a>
+    	<a class="new-registration" href="#">Новая регистрация </a>
+    	</p>
+    		<button class="button" type="submit">Войти	</button>
+    </form>
+    	<button class="modal-close" type="button">Закрыть</button>
     </section>
     <!-- попап для карты? -->
   </body>
