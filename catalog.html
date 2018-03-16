@@ -174,30 +174,29 @@
                 <li class="paginator-item"><a href="#">5</a></li>
         </section>
     </main>
-    <footer class="main-footer">
-        
-        <ul>
-            <li><a class="socials" href="#">Твитер</a></li>
-            <li><a class="socials" href="#">Инстаграм</a></li>
-            <li><a class="socials" href="#">Фейсбук</a></li>
-            <li><a class="socials" href="#">Вконтакте</a></li>
-        </ul>
-        <a class="" href="#">Для поставщиков</a>
-        <a class="" href="#">О производстве</a>
-        <a class="" href="#">Наши документы</a>
-        <a class="" href="#">Экологические стандарты</a>
-        <p class="footer-author">
-            <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип">
-            Сделано в <a href="https://htmlacademy.ru">HTML Academy </a>© 2017
-        </p>
-
-
-    </footer>
     <section class="modal-login">
         <h2>Личный кабинет </h2>
         <p> Введите логин и пароль</p>
-        <!-- форма -->
-        <span class="modal-close">x</span>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="info-login-password">
+            <label class="login-chckbox">
+                <input type="checbox" name="remember" class="visually-hidden" id="info-login-password"> >
+                <label for="info-login-password">Запомните меня</label> <!-- нужно? -->
+            </label>
+        <a class="restore" href="#">Забыли пароль? </a>
+        <a class="new-registration" href="#">Новая регистрация </a>
+        </p>
+            <button class="button" type="submit">Войти  </button>
+    </form>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
     <!-- попап для карты? -->
   </body>
