@@ -16,12 +16,14 @@
     		</ul>
     		<a class="search" href="#">Поиск</a> <!-- ссылка или кнопка форма-->
     		<ul class="user-navigation">
-    			<li class="login-link">
+    			<li class="login">
     				<a class="login-link" href="login.html">Вход</a>
                 </li>
     		</ul>
     		<ul class="basket">
-    		<li class="backet-btn">Корзина</li>
+    		     <li class="backet-btn">
+    		     	<a class="backet-link" href="#">Корзина</a>
+    		     </li>
     	    </ul>
     		<div>
     		С 10 до 20, ежедневно<br> <!-- br? нужен ? -->
@@ -39,15 +41,15 @@
     			<input type="radio" name="slider" id="switch2">
     			<input type="radio" name="slider" id="switch3">
 
-    			<img src=img/ice1.png width="" height="" alt="Крем-брюле и пломбир с малиновым джемом"> <!-- размер?-->
+    			<img src=img/ice1.png width="1" height="1" alt="Крем-брюле и пломбир с малиновым джемом"> <!-- размер?-->
     			<p>Крем-брюле и пломбир с малиновым джемом</p>
     			<button class="button slider-button">Давайте оба!</button>
                 			
-    			<img src=img/ice2.png width="" height="" alt="Шоколадный пломбир и лимонный сорбет">
+    			<img src=img/ice2.png width="1" height="1" alt="Шоколадный пломбир и лимонный сорбет">
     			<p>Шоколадный пломбир и лимонный сорбет</p>
     			<button class="button slider-button">Давайте оба!</button>
     			
-    			<img src=img/ice3.png width="" height="" alt="Пломбир с помадкой и клубничный щербет">
+    			<img src=img/ice3.png width="1" height="1" alt="Пломбир с помадкой и клубничный щербет">
     			<p>Пломбир с помадкой и клубничный щербет</p>
     			<button class="button slider-button">Давайте оба!</button>
     		 		
@@ -89,7 +91,7 @@
     				 <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
     			</li>
     			<li>
-    				<img src="img/hit.svg"width="61" height="61" alt="Хит">
+    				<img src="img/hit.svg" width="61" height="61" alt="Хит">
     				<img src="img/4.jpg"  width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
     				<p>415 &#8381; <span class="kg">кг</span></p>
     				 <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
@@ -130,7 +132,7 @@
     			<b>8 812 450-25-25</b><br>
     			(с 10 до 20 ежедневно)
     		</p>
-    		<button class="button contacts-botton" href="contacts.html">Форма обратной связи</button>
+    		<button class="button contacts-botton">Форма обратной связи</button>
   	  	</section>
   	  	</div>
 
@@ -167,11 +169,12 @@
     		<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
     	</p>
     	<p class="info-login-password">
-    		<label class="login-chckbox">
-    			<input type="checbox" name="remember" class="visually-hidden" id="info-login-password"> >
-    		    <label for="info-login-password">Запомните меня</label> <!-- нужно? -->
-            </label>
-    	<a class="restore" href="#">Забыли пароль? </a>
+    		<label class="login-checkbox">
+    			<input type="checkbox" name="remember" class="visually-hidden"> 
+    		    <span class="checkbox-indicator"></span>
+    		Запомните меня
+    	    </label> <!-- нужно? -->
+            <a class="restore" href="#">Забыли пароль? </a>
     	<a class="new-registration" href="#">Новая регистрация </a>
     	</p>
     		<button class="button" type="submit">Войти	</button>
