@@ -83,6 +83,9 @@ body {
 .slider {
 	font-size: 60px;
 	line-height: 60.35px;
+	background-image: url("../img/ice1.png");
+	background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .slider-button {
@@ -101,28 +104,32 @@ body {
 }
 
 .razz {
-	background-image: url("img/razz.jpg");
+	background-image: url("../img/razz.jpg");
+	background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .choco {
-	background-image: url("img/choco.jpg");
+	background-image: url("../img/choco.jpg");
+	background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
-.popular-products {
+.catalog-item {
 	list-style: none;
 }
 
-.popular-products p {
+.catalog-item p {
 	font-size: 45px;
 	line-height: 45px;
 }
 
-.popular-products span {
+.catalog-item span {
     font-size: 30px;
 	line-height: 45px;
 }
 
-.popular-products a {
+.catalog-item a {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
@@ -145,7 +152,9 @@ body {
 	font-weight: 400;
 	color: #000000;
 
-	background-image: url("img/wafer.jpg");
+	background-image: url("../img/wafer.jpg");
+	background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .info-page ul {
@@ -172,7 +181,9 @@ body {
 }
 
 .article {
-	background-image: url("img/strawberry.jpg");
+	background-image: url("../img/strawberry.jpg");
+	background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .dispatch {
@@ -217,8 +228,34 @@ body {
 }
 
 .modal-feedback h2 {
-	font-size: 24px;
-	line-height: 28px;
 	font-weight: 500;
 	color: #000000;
+}
+
+.catalog-page h1 {
+    font-size: 35px;
+	line-height: 42px;
+}
+
+.breadcrumbs a {
+	color: #ffffff;
+}
+
+.filters {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.filters label {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.catalog-item img {
+	border-radius: 135px;
+}
+
+.main-footer ul {
+	list-style: none;
 }
