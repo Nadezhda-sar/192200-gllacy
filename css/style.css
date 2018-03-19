@@ -1,0 +1,224 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif; /*шрифт?*/;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #ffffff;
+
+	background-color: #849d8f;
+}	
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+
+	background-color: #849d8f;
+}
+
+.dropdown {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.timeline {
+	font-size: 14px;
+	line-height: 16px;
+	
+}
+
+.phone {
+	font-size: 22px;
+	line-height: 24px;
+	
+}
+
+.site-navigation,
+.user-navigation,
+.basket {
+	list-style: none;
+}
+
+.site-navigation a,
+.dropdown a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.dropdown a:hover {
+	color: #000000;
+	background-color: #f7e7e2;
+}
+
+.site-navigation a:focus,
+.dropdown a:focus {
+	color: #000000;
+	background-color: #ebccc2;
+}
+
+.button {
+    font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    border-radius: 15px;
+    border: none;
+}
+
+/* кнопка не меняет цвет при наведении? */
+.button:hover,
+.button:focus,
+.button:active {
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.slider {
+	font-size: 60px;
+	line-height: 60.35px;
+}
+
+.slider-button {
+	font-size: 32px;
+	line-height: 44px;
+}
+
+.banner h3 {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.banner p {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.razz {
+	background-image: url("img/razz.jpg");
+}
+
+.choco {
+	background-image: url("img/choco.jpg");
+}
+
+.popular-products {
+	list-style: none;
+}
+
+.popular-products p {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.popular-products span {
+    font-size: 30px;
+	line-height: 45px;
+}
+
+.popular-products a {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.popular-products a:hover,
+.popular-products a:focus {
+	color: #ffbc9e;
+} 
+/* background-color? */
+
+.popular-products img {
+	border-radius: 135px;
+}
+
+.info-page {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #000000;
+
+	background-image: url("img/wafer.jpg");
+}
+
+.info-page ul {
+	list-style: none;
+}
+
+.info-page h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.index-columns {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.index-columns a {
+	font-size: 24px;
+	line-height: 30px;
+	color: #000000;
+}
+
+.article {
+	background-image: url("img/strawberry.jpg");
+}
+
+.dispatch {
+	/* градиент?*/
+}
+
+.contact-info {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #000000;
+}
+.contact {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+}
+
+.main-footer {
+	font-size: 13px;
+	line-height: 28px;
+	font-weight: 400;
+}
+
+.provider {
+	font-weight: 700;
+}
+
+.main-footer a {
+	color: #ffffff;
+}
+
+/* сделано в Академии, класс? р*/
+
+.modal-feedback {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #999999;
+
+	background-color: #f8f7f4;
+}
+
+.modal-feedback h2 {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+	color: #000000;
+}
