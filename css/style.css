@@ -237,8 +237,20 @@ body {
 	line-height: 42px;
 }
 
+.breadcrumbs {
+  list-style: none;
+}
+
 .breadcrumbs a {
 	color: #ffffff;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filters {
+	outline-style: none;
 }
 
 .filters {
@@ -252,10 +264,45 @@ body {
 	line-height: 18px;
 }
 
+.filters ul {
+	list-style: none;
+}
+
 .catalog-item img {
 	border-radius: 135px;
 }
 
 .main-footer ul {
 	list-style: none;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  color: #ffffff;
+  background-color: ;
+}
+
+.pagination-item-current a {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+
+  background-color: #ffffff;
 }
