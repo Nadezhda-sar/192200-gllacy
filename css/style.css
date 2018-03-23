@@ -9,14 +9,18 @@ body {
 	color: #ffffff;
 
 	background-color: #849d8f;
-}	
+}
+
+
+
+
 
 .main-navigation {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 
-	background-color: #849d8f;
+  height: 100px;
 }
 
 .dropdown {
@@ -28,13 +32,13 @@ body {
 .timeline {
 	font-size: 14px;
 	line-height: 16px;
-	
+
 }
 
 .phone {
 	font-size: 22px;
 	line-height: 24px;
-	
+
 }
 
 .site-navigation,
@@ -61,7 +65,7 @@ body {
 }
 
 .button {
-    font-size: 18px;
+  font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #ffffff;
@@ -73,25 +77,20 @@ body {
 }
 
 /* кнопка не меняет цвет при наведении? */
-.button:hover,
-.button:focus,
+.button:hover {
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+
+
 .button:active {
-    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+    background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+
 }
 
-.slider {
-	font-size: 60px;
-	line-height: 60.35px;
-	background-image: url("../img/ice1.png");
-	background-position: 0 0;
-    background-repeat: no-repeat;
-}
 
-.slider-button {
-	font-size: 32px;
-	line-height: 44px;
-}
 
 .banner h3 {
 	font-size: 35px;
@@ -107,12 +106,16 @@ body {
 	background-image: url("../img/razz.jpg");
 	background-position: 0 0;
     background-repeat: no-repeat;
+    border-radius: 20px;
+    padding-left: 20px;
 }
 
 .choco {
 	background-image: url("../img/choco.jpg");
 	background-position: 0 0;
     background-repeat: no-repeat;
+    border-radius: 20px;
+     padding-left: 20px;
 }
 
 .catalog-item {
@@ -139,7 +142,7 @@ body {
 .popular-products a:hover,
 .popular-products a:focus {
 	color: #ffbc9e;
-} 
+}
 /* background-color? */
 
 .popular-products img {
@@ -187,7 +190,14 @@ body {
 }
 
 .dispatch {
-	/* градиент?*/
+	background-image: url("../img/bg-post.svg");
+  border-radius: 25px;
+} /*  картинка или градиент?*/
+
+.dispatch-wrapper {
+  background-color: #ecebea;
+  border-radius: 25px;
+  padding: 10px;
 }
 
 .contact-info {
@@ -305,4 +315,278 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+html,
+body {
+  width: 1200px;
+}
+
+body {
+  /* Временно для сетки */
+  background-image: url('../img/gllacy-index-1200.jpg');
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0, 0, 0, 0);
+}
+
+.site-wrapper {
+  min-width: 940px;
+  background-image: url("../img/ice1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-bottom: 40px;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/ice2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/ice3.png");
+}
+
+.container {
+
+width: 900px;
+margin: 0 auto;
+padding: 0 20px;
+
+}
+
+.main-navigation: {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+min-height: 120px;
+ outline: 1px solid #555555;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+
+outline: 1px solid #111111;
+
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+
+  width: 355px;
+  min-height: 65px;
+  outline: 1px solid red;
+}
+
+.dropdown {
+  margin: 0;
+  padding: 0;
+
+
+  width: 270px;
+  min-height: 65px;
+  outline: 1px solid yellow;
+
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  min-height: 45px;
+  outline: 1px solid #222222;
+}
+
+
+.main-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.slide-title {
+width: 700px;
+margin: 0 auto;
+margin-bottom: 27px;
+
+
+  font-size: 60px;
+  line-height: 60.35px;
+}
+
+.slider {
+  position: relative;
+  padding-top: 321px;
+  text-align; center;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider {
+  display: none;
+}
+
+.slider-button {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.slider-button {
+  display: inline-block;
+  padding: 12px 44px;
+
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+#switch1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/ice1.png");
+}
+
+#switch2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/ice2.png");
+}
+
+#switch3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/ice3.png");
+}
+
+#switch1:checked ~ .site-wrapper #slide1,
+#switch2:checked ~ .site-wrapper #slide2,
+#switch3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#switch1:checked ~ .site-wrapper label[for="switch1"],
+#switch2:checked ~ .site-wrapper label[for="switch2"],
+#switch3:checked ~ .site-wrapper label[for="switch3"] {
+  background-color: #ffffff;
+}
+
+
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+  margin-bottom: 40px;
+}
+
+.razz {
+  width: 560px;
+}
+
+.choco {
+  width: 560px;
+}
+
+.popular {
+  margin-bottom: 40px;
+}
+
+.catalog-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  min-height: 325px;
+  }
+
+.popular-products {
+  width: 270px;
+}
+
+.info-page {
+  width: 1147px;
+  min-height: 305px;
+  margin-bottom: 40px;
+  border-radius: 25px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+  margin-bottom: 40px;
+}
+
+.article {
+  width: 560px;
+
+  min-height: 220px;
+  border-radius: 20px;
+}
+
+.dispatch {
+  width: 560px;
+
+  min-height: 220px;
+  border-radius: 20px;
 }
