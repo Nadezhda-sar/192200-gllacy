@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> <!-- проверить шрифт-->
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
    </head>
   <body>
           <input class="visually-hidden" type="radio" id="switch1" name="slider"  checked>
           <input class="visually-hidden" type="radio" id="switch2" name="slider">
           <input class="visually-hidden" type="radio" id="switch3" name="slider">
+
     <div class="site-wrapper">
       <div class="container"> <!-- нужно ли? -->
        <header class="main-header">
@@ -23,7 +25,8 @@
     			<li><a href="delivery.html">Доставка и оплата</a></li>
     			<li><a href="info.html">О кампании</a></li>
     		</ul>
-
+</div>
+<div class="wrapper">
             <div class="dropdown">
     		<button class="button search-button">Поиск</button>
     		    <ul class="user-navigation">
@@ -37,11 +40,12 @@
     		     </li>
     	    </ul>
     	    </div>
-        </div>
+
       	<div class="timeline">
     		С 10 до 20, ежедневно
     		<span class="phone">8 812 450-25-25</span>
-    		</div> <!-- div? -->
+    		</div>
+      </div>
     	</nav>
     </header>
 
@@ -74,8 +78,8 @@
         </li>
       </ul>
     </section>
-   	</div>
-   </div>
+
+
 
 
 
@@ -95,28 +99,28 @@
         <div class="product">
     	<section class="popular">
     		<h2 class="visually-hidden">Популярные товары</h2>
-    		<ul class="catalog-item">
-    			<li class="popular-products">
+    		<ul class="catalog-list">
+    			<li class="catalog-item">
     				<img src="img/hit.svg" width="61" height="61" alt="Хит">
     				<img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
     				<p>310 &#8381;<span class="kg">/кг</span></p>
     				 <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой cтружкой
                      </a>
     			</li>
-    			<li class="popular-products">
+    			<li class="catalog-item">
     				<img src="img/hit.svg" width="61" height="61" alt="Хит">
     				<img src="img/2.jpg"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
     				<p>380 &#8381;<span class="kg">/кг</span></p>
     				 <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада
                      </a>
     			</li>
-    			<li class="popular-products">
+    			<li class="catalog-item">
     				<img src="img/hit.svg" width="61" height="61" alt="Хит">
     				<img src="img/3.jpg"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
     				<p>355 &#8381;<span class="kg">/кг</span></p>
     				 <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
     			</li>
-    			<li class="popular-products">
+    			<li class="catalog-item">
     				<img src="img/hit.svg" width="61" height="61" alt="Хит">
     				<img src="img/4.jpg"  width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
     				<p>415 &#8381;<span class="kg">/кг</span></p>
@@ -149,6 +153,8 @@
       </div>
     	</div>
         </div>
+      </main>
+
         <div class="contact-info">
         	<img src="img/map.jpg" width="1200" height="430" alt="Карта">
     	<section class="contacts">
@@ -164,25 +170,28 @@
   	  	</section>
   	  	</div>
 
-    </main>
-    <footer class="main-footer">
 
-    	<ul>
+    <footer class="main-footer">
+      <div class="container">
+
+    	<ul class="footer-socials">
     		<li><a class="socials" href="#">Твитер</a></li>
     		<li><a class="socials" href="#">Инстаграм</a></li>
     		<li><a class="socials" href="#">Фейсбук</a></li>
     		<li><a class="socials" href="#">Вконтакте</a></li>
     	</ul>
+      <div class="general-info">
     	<a class="provider" href="#">Для поставщиков</a>
     	<a href="#">О производстве</a>
     	<a href="#">Наши документы</a>
     	<a href="#">Экологические стандарты</a>
+    </div>
     	<p class="footer-author">
     		<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип">
     		Сделано в <a href="https://htmlacademy.ru">HTML Academy </a>© 2017
     	</p>
 
-
+</div>
     </footer>
     <section class="modal-feedback">
 
@@ -205,6 +214,7 @@
     </form>
     	<button class="modal-close" type="button">Закрыть</button>
     </section>
-
+</div>
+</div>
   </body>
 </html>

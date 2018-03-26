@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> <!-- проверить шрифт-->
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="main-header"> 
+   </head>
+  <body class="inner-page">
+      <div class="container">
+    <header class="main-header">
     	<nav class="main-navigation">
     		<a class="main-heder-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип">
     		</a>
@@ -33,7 +35,7 @@
             С 10 до 20, ежедневно <br>
             <span class="phone">8 812 450-25-25</span>
             </p>
-        </nav>  
+        </nav>
     </header>
     <main class="container">
         <h1 class="catalog-page">Сливочное мороженое</h1>
@@ -55,7 +57,7 @@
                     <legend>Цена: 100 руб. - 500 руб.</legend>
                     <label>
                         <input type="range" name="price" min="100" max="500">
-                    </label> 
+                    </label>
                     <!-- двойной ползунок? -->
                 </fieldset>
                 <fieldset>
@@ -109,126 +111,149 @@
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Виды мороженого</h2>
-            <ul class="catalog-items">
+            <ul class="catalog-list">
                 <li class="catalog-item">
-                    <h3>
-                        <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой cтружкой 
-                        </a>
-                    </h3>
+
                     <img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     <p> 310 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
                     <h3>
-                        <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада 
+                        <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой cтружкой
                         </a>
                     </h3>
+
+                </li>
+                <li class="catalog-item">
+
                     <img src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-                    
                     <p> 380 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
                     <h3>
-                        <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада 
+                        <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада
                         </a>
                     </h3>
-                                           <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                    
+
+
+                </li>
+                <li class="catalog-item">
+                    <img src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                     <p> 355 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
                     <h3>
-                        <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой 
+                        <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада
                         </a>
                     </h3>
-                    
+
+
+                </li>
+                <li class="catalog-item">
+
+
                         <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-                    
-                    <p> 415 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
-                    <h3>
-                        <a href="catalog-item.html">Сливочное с брусничным джемом
- 
+                        <p> 415 &#8381;/<span class="kg">кг</span></p>
+                        <h3>
+                        <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой
                         </a>
                     </h3>
-                   
+
+
+                </li>
+                <li class="catalog-item">
+
+
                         <img src="img/5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
-                  
-                    <p> 325 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
-                    <h3>
-                        <a href="catalog-item.html">Сливочно-черничное с цельными ягодами черники  
+                        <p> 325 &#8381;/<span class="kg">кг</span></p>
+                        <h3>
+                        <a href="catalog-item.html">Сливочное с брусничным джемом
+
                         </a>
                     </h3>
-                   
+
+
+                </li>
+                <li class="catalog-item">
+
+
                         <img src="img/6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники ">
-                   
-                    <p> 410 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
-                    <h3>
-                        <a href="catalog-item.html">Сливочно-лимонное с карамельной присыпкой 
+                        <h3>
+                        <p> 410 &#8381;/<span class="kg">кг</span></p>
+                        <a href="catalog-item.html">Сливочно-черничное с цельными ягодами черники
                         </a>
                     </h3>
-                   
+
+
+                </li>
+                <li class="catalog-item">
+
+
                         <img src="img/7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-                    <p>375 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
-                    <h3>
-                        <a href="catalog-item.html">Сливочное с шоколадной стружкой 
+                        <p>375 &#8381;/<span class="kg">кг</span></p>
+                        <h3>
+                        <a href="catalog-item.html">Сливочно-лимонное с карамельной присыпкой
                         </a>
                     </h3>
-                 
+
+                </li>
+                <li class="catalog-item">
+
+
                         <img src="img/8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-                   
-                    <p> 320 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
-                    <h3>
-                        <a href="catalog-item.html">Сливочно-ванильное с кусочками шоколада
- 
+                        <p> 320 &#8381;/<span class="kg">кг</span></p>
+                        <h3>
+                        <a href="catalog-item.html">Сливочное с шоколадной стружкой
                         </a>
                     </h3>
-                   
+
+
+                </li>
+                <li class="catalog-item">
+
+
                         <img src="img/9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-                   
-                    <p> 440 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
-                    <h3>
-                        <a href="catalog-item.html">Сливочноe с ментоловым сиропом 
+                        <p> 440 &#8381;/<span class="kg">кг</span></p>
+                        <h3>
+                        <a href="catalog-item.html">Сливочно-ванильное с кусочками шоколада
+
                         </a>
                     </h3>
-                    
+
+
+                </li>
+                <li class="catalog-item">
+
+
                         <img src="img/10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
-                   
-                    <p> 435 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
-                    <h3>
-                        <a href="catalog-item.html">Сливочное с кусочками черного шоколада 
+                        <p> 435 &#8381;/<span class="kg">кг</span></p>
+                        <h3>
+                        <a href="catalog-item.html">Сливочноe с ментоловым сиропом
                         </a>
                     </h3>
-                   
+
+
+                </li>
+                <li class="catalog-item">
+
+
                         <img src="img/11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-                    
-                    <p> 355 &#8381;/<span class="kg">кг</span></p>
-                </li>
-                <li class="catalog-item">
-                    <h3>
-                        <a href="catalog-item.html">Сливочное с мятным сиропом 
+                        <p> 355 &#8381;/<span class="kg">кг</span></p>
+                        <h3>
+                        <a href="catalog-item.html">Сливочное с кусочками черного шоколада
                         </a>
                     </h3>
-                    
+
+
+                </li>
+                <li class="catalog-item">
+
+
                         <img src="img/12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-                    
-                    <p> 420 &#8381;/<span class="kg">кг</span></p>
+                        <p> 420 &#8381;/<span class="kg">кг</span></p>
+                        <h3>
+                        <a href="catalog-item.html">Сливочное с мятным сиропом
+                        </a>
+                    </h3>
+
+
                 </li>
 
-                
+
             </ul>
             <ul class="pagination-list">
                 <li class="paginator-item pagination-item-current"><a>1</a></li>
@@ -240,7 +265,7 @@
         </section>
     </main>
      <footer class="main-footer">
-        
+
         <ul>
             <li><a class="socials" href="#">Твитер</a></li>
             <li><a class="socials" href="#">Инстаграм</a></li>
@@ -259,7 +284,7 @@
 
     </footer>
     <section class="modal-feedback">
-        
+
         <h2>Мы обязательно вам ответим!</h2>
             <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -273,12 +298,13 @@
         <p class="info-feedback">
             <label class="visually-hidden" for="user-text">Напишите что-нибудь...</label>
             <input class="feedback-text" id="user-text" type="text" name="text" placeholder="Напишите что-нибудь...">
-        </p> 
+        </p>
             <button class="button" type="submit">Отправить</button>
 
     </form>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
-    
+</div>
+
   </body>
 </html>
