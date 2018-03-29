@@ -51,9 +51,13 @@ img {
   color: #ffffff;
 }
 
+.dropdown {
+  display: flex
+}
+
 .user-search a,
-.user-navigation,
-.basket {
+.user-navigation a,
+.basket a {
   display: block;
 
   padding: 22px 10px;
@@ -142,35 +146,16 @@ img {
   background-color: #ebccc2;
 }
 
-.button {
-  color: #ffffff;
-  border: none;
-  border-radius: 15px;
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-/* кнопка не меняет цвет при наведении? */
-.button:hover {
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-}
-
-.button:active {
-  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 0.004);
-}
-
 .banner h3 {
+  margin: 18px 20px;
+
   font-size: 35px;
   line-height: 41px;
 }
 
 .banner p {
+  margin: 0 20px;
+
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -179,11 +164,15 @@ img {
 }
 
 .razz {
+  box-sizing: border-box;
+
   background-image: url("../img/razz.jpg");
 }
 
 
 .choco {
+  box-sizing: border-box;
+
   background-image: url("../img/choco.jpg");
 }
 
@@ -239,6 +228,7 @@ img {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
+
 }
 
 
@@ -399,9 +389,6 @@ img {
   background-color: #ffffff;
 }
 
-
-/*  сетки  */
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -451,7 +438,7 @@ input[type="radio"].visually-hidden {
 .container {
   width: 1146px;
   margin: 0 auto;
-  padding: 10px 27px;
+  padding: 0 27px;
 }
 
 .main-navigation {
@@ -460,7 +447,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  margin-bottom: 550px;
+  padding: 10px 0;
 
   outline: 1px solid #ffffff;
 }
@@ -518,19 +505,6 @@ input[type="radio"].visually-hidden {
   outline: 1px solid #222222;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slide-title {
   width: 700px;
   margin: 0 auto;
@@ -543,7 +517,8 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
 
-  padding-top: 321px;
+  padding-top: 205px;
+  padding-bottom: 49px;
 
   text-align: center;
 }
@@ -555,19 +530,16 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.slider {
+.slide {
   display: none;
 }
 
-.slider-button {
-  font-size: 32px;
-  line-height: 44px;
-}
 
-.slider-button {
+
+.button {
   display: inline-block;
 
-  padding: 12px 44px;
+  padding: 11px 24px;
 
   cursor: pointer;
   text-align: center;
@@ -582,10 +554,28 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-button {
+  padding: 12px 44px;
+
   font-size: 32px;
   line-height: 44px;
 }
-
 .slider-controls label {
   display: inline-block;
 
@@ -640,15 +630,25 @@ input[type="radio"].visually-hidden {
 
 
 .banner {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 
   min-height: 230px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
-  outline: 1px solid #222222;
 }
 
+.banner-button {
+  position: absolute;
+
+  box-sizing: border-box;
+  min-width: 170px;
+  margin: 0;
+
+
+}
 .razz,
 .choco {
   width: 560px;
@@ -656,6 +656,15 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
 }
 
+.banner-button-razz {
+  top: 159px;
+  left: 370px;
+}
+
+.banner-button-choco {
+  top: 159px;
+  right: 19px;
+}
 
 .popular {
   margin-bottom: 40px;
@@ -675,6 +684,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
   width: 270px;
+  margin: 20px auto;
 }
 
 .info-page {
