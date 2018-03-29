@@ -209,6 +209,8 @@ img {
 }
 
 .info-page {
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px;
 
   color: #000000;
