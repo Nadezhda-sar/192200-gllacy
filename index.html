@@ -28,17 +28,29 @@
 </div>
 <div class="wrapper">
             <div class="dropdown">
-              <ul class="user-search">
+              <ul class="dropdown-item">
                 <li class="search">
-    		<a class="search-link" href="#">Поиск</a>
-      </li>
+                  <form class="search-form" action="https://echo.htmlacademy.ru">
+                  <div class="field-text">
+                    <label class="field-text-label visually-hidden" for="user-search">Поиск по сайту</label>
+                    <input class="field-text-input" id="user-search" type="search" placeholder="Что ищем?" required>
+                  </div>
+                  </form>
+    	     </li>
     </ul>
-    		    <ul class="user-navigation">
+    		    <ul class="dropdown-item">
     			<li class="login">
+            <form class="login-form" action="https://echo.htmlacademy.ru">
+            <div class="field-text">
+              <label class="field-text-label visually-hidden" for="user-login">Электронная почта для входа</label>
+                <input class="field-text-input" id="user-login" type="email" placeholder="Электронная почта" required>
+
+            </div>
+            </form>
     				<a class="login-link" href="login.html">Вход</a>
                 </li>
     		</ul>
-    		<ul class="basket">
+    		<ul class="dropdown-item">
     		     <li class="backet-btn">
     		     	<a class="backet-link" href="#">Корзина</a>
     		     </li>
@@ -101,29 +113,29 @@
     		<h2 class="visually-hidden">Популярные товары</h2>
     		<ul class="catalog-list">
     			<li class="catalog-item">
-    				<img src="img/hit.svg" width="61" height="61" alt="Хит">
-    				<img src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-    				<p>310 &#8381;<span class="kg">/кг</span></p>
+              <span class="catalog-item-hit"></span>
+    				<img class="catalog-item-img" src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+    				<p class="catalog-item-cost">310 &#8381;<span class="kg">/кг</span></p>
     				 <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой cтружкой
                      </a>
     			</li>
     			<li class="catalog-item">
-    				<img src="img/hit.svg" width="61" height="61" alt="Хит">
-    				<img src="img/2.jpg"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-    				<p>380 &#8381;<span class="kg">/кг</span></p>
+            <span class="catalog-item-hit"></span>
+    				<img  src="img/2.jpg"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+    				<p class="catalog-item-cost">380 &#8381;<span class="kg">/кг</span></p>
     				 <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада
                      </a>
     			</li>
     			<li class="catalog-item">
-    				<img src="img/hit.svg" width="61" height="61" alt="Хит">
+              <span class="catalog-item-hit"></span>
     				<img src="img/3.jpg"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-    				<p>355 &#8381;<span class="kg">/кг</span></p>
+    				<p class="catalog-item-cost">355 &#8381;<span class="kg">/кг</span></p>
     				 <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
     			</li>
     			<li class="catalog-item">
-    				<img src="img/hit.svg" width="61" height="61" alt="Хит">
+              <span class="catalog-item-hit"></span>
     				<img src="img/4.jpg"  width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-    				<p>415 &#8381;<span class="kg">/кг</span></p>
+    				<p class="catalog-item-cost">415 &#8381;<span class="kg">/кг</span></p>
     				 <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
     			</li>
     		</ul>
@@ -132,24 +144,29 @@
         <div>
     	<section class="info-page">
     		<h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-    		<ul>
-    			<li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-    			<li> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</li>
-    			<li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-    			<li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-    		</ul>
+
+    			<p class="info-page-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+    			<p class="info-page-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+    			<p class="info-page-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+    			<p class="info-page-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+
     	</section>
         </div>
         <div class="index-columns">
     	<article class="article">
         		<h3 class="article-title">Новое в нашем блоге</h3>
-    		<p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+    		<p><a class="article-link" href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
     	</article>
     	<div class="dispatch">
         <div class="dispatch-wrapper">
     		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-    		<form></form>
-    		<button class="button dispatch-botton">Отправить</button>
+        <form class="dispatch-form" action="https://echo.htmlacademy.ru">
+          <div class="field-text">
+            <label class="field-text-label visually-hidden" for="dispatch-email">Электронная почта для подписки</label>
+            <input class="field-text-input" id="dispatch-email" type="email" mame="dispatch" placeholder="Электронная почта" required>
+          </div>
+          <button class="button dispatch-botton">Отправить</button>
+        </form>
       </div>
     	</div>
         </div>
@@ -175,20 +192,39 @@
       <div class="container">
 
     	<ul class="footer-socials">
-    		<li><a class="socials" href="#">Твитер</a></li>
-    		<li><a class="socials" href="#">Инстаграм</a></li>
-    		<li><a class="socials" href="#">Фейсбук</a></li>
-    		<li><a class="socials" href="#">Вконтакте</a></li>
-    	</ul>
-      <div class="general-info">
-    	<a class="provider" href="#">Для поставщиков</a>
-    	<a href="#">О производстве</a>
-    	<a href="#">Наши документы</a>
-    	<a href="#">Экологические стандарты</a>
-    </div>
+    		<li class="socials">
+          <a href="https://twitter.com" aria-label="Мы в твитере" target="_blank"></a>
+        </li>
+    		<li class="socials">
+          <a href="https://www.instagram.com" aria-label="Мы в инстаграм" target="_blank"></a>
+        </li>
+    		<li class="socials">
+          <a href="https://www.facebook.com" aria-label="Мы в фейсбуке" target="_blank"></a>
+        </li>
+    		<li class="socials">
+          <a href="https://vk.com" aria-label="Мы в контакте" target="_blank"></a>
+        </li>
+      </ul>
+
+      <ul class="general-info">
+       <li class="general-info-item">
+          <a class="provider" href="#">Для поставщиков</a>
+       </li>
+       <li class="general-info-item">
+          <a href="#">О производстве</a>
+       </li>
+       <li class="general-info-item">
+          <a href="#">Наши документы</a>
+       </li>
+       <li class="general-info-item">
+          <a href="#">Экологические стандарты</a>
+       </li>
+      </ul>
+
     	<p class="footer-author">
-    		<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип">
-    		Сделано в <a href="https://htmlacademy.ru">HTML Academy </a>© 2017
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип"></a><br>
+     Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>© 2017
     	</p>
 
 </div>
@@ -205,11 +241,8 @@
     		<label class="visually-hidden" for="user-mail">Ваша почта для ответа?</label>
     		<input class="feedback-icon-mail" id="user-mail" type="text" name="mail" placeholder="Ваша почта для ответа?">
     	</p>
-    	<p class="info-feedback">
-    		<label class="visually-hidden" for="user-text">Напишите что-нибудь...</label>
-    		<input class="feedback-text" id="user-text" type="text" name="text" placeholder="Напишите что-нибудь...">
-    	</p>
-    		<button class="button" type="submit">Отправить</button>
+    	<textarea class="feedback-textarea" name="letter" cols="45" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле ввода текста"></textarea>
+    		<button class="button feedback-botton" type="submit">Отправить</button>
 
     </form>
     	<button class="modal-close" type="button">Закрыть</button>
