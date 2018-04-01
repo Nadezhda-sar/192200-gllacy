@@ -17,54 +17,72 @@
        <header class="main-header">
 
     	<nav class="main-navigation">
-        <div class="main-navigation-wrapper">
-    		<a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип">
-    		</a>
+        <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип"></a>
     		<ul class="site-navigation">
-    			<li><a href="catalog.html">Каталог </a></li>
-    			<li><a href="#">Доставка и оплата</a></li>
-    			<li><a href="#">О кампании</a></li>
-    		</ul>
-</div>
-<div class="wrapper">
-            <div class="dropdown">
-              <ul class="dropdown-item">
-                <li class="search">
-                  <form class="search-form" action="https://echo.htmlacademy.ru">
-                  <div class="field-text">
-                    <label class="field-text-label visually-hidden" for="user-search">Поиск по сайту</label>
-                    <input class="field-text-input" id="user-search" type="search" placeholder="Что ищем?" required>
-                  </div>
-                  </form>
-    	     </li>
-    </ul>
-    		    <ul class="dropdown-item">
-    			<li class="login">
-            <form class="login-form" action="https://echo.htmlacademy.ru">
-            <div class="field-text">
-              <label class="field-text-label visually-hidden" for="user-login">Электронная почта для входа</label>
-                <input class="field-text-input" id="user-login" type="email" placeholder="Электронная почта" required>
-
-            </div>
-            </form>
-    				<a class="login-link" href="login.html">Вход</a>
+           <li class="site-navigation-item site-navigation-item-catalog">
+            <div class="site-navigation-wrap">
+            <a class="site-navigation-link site-navigation-link-catalog" href="catalog.html">
+              <span class="border-link border-link-site-navigation">Каталог</span> </a>
+            <ul class="main-submenu">
+                <li class="main-submenu-item main-submenu-item-lead">
+                  <a href="#">Новинки</a>
                 </li>
+                <li class="main-submenu-item main-submenu-item-line">&#8203;</li>
+                <li class="main-submenu-item">
+                  <a class="main-submenu-link" href="catalog.html">Сливочные</a>
+                </li>
+                <li class="main-submenu-item">
+                  <a class="main-submenu-link" href="#">Щербеты</a>
+                </li>
+                <li class="main-submenu-item">
+                  <a class="main-submenu-link" href="#">Фруктовый лёд</a>
+                </li>
+                <li class="main-submenu-item">
+                  <a class="main-submenu-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class:"site-navigation-item"><a class="site-navigation-link" href="#"><span class="border-link border-link-site-navigation">Доставка и оплата</span></a></li>
+    			<li class:"site-navigation-item"><a class="site-navigation-link" href="#"><span class="border-link border-link-site-navigation">О кампании</span></a></li>
     		</ul>
-    		<ul class="dropdown-item">
-    		     <li class="backet-btn">
-    		     	<a class="backet-link" href="#">Корзина</a>
-    		     </li>
-    	    </ul>
-    	    </div>
+      </nav>
+      <div class="user-bar">
+            <div class="user-bar-item">
+              <a class="search-link popup-link" href="#"></a>
+                  <form class="search-form feedback" action="https://echo.htmlacademy.ru">
+                    <label class="search-label visually-hidden" for="user-search">Поиск по сайту</label>
+                    <input class="search-input feedback-icon-user" id="user-search" type="search" placeholder="Что ищем?" required>
+                  </form>
+            </div>
 
-      	<div class="timeline">
-    		<p> С 10 до 20, ежедневно
-    		<span class="phone"> 8 812 450-25-25</span>
-      </p>
-    		</div>
-      </div>
-    	</nav>
-    </header>
+    	      <div class="user-bar-item">
+            <a class="login-link popup-link" href="#">Вход</a>
+            <form class="login-form feedback" action="https://echo.htmlacademy.ru">
+            <label class="login-label visually-hidden" for="user-login">Электронная почта для входа</label>
+            <input class="login-input login-email feedback-icon-user" id="user-login" type="email" placeholder="Электронная почта" required>
+
+            <label class="login-label visually-hidden" for="user-login">Электронная почта для входа</label>
+            <input class="input-text login-password feedback-icon-mail" type="password" name="user-password" placeholder="Пароль">
+
+            <button class="button login-botton" type="submit">Войти</button>
+            <a class="login-restoring" href="#"><span class="link-border link-border_dark">Забыли пароль?</span></a>
+            <a class="login-registration" href="#"><span class="link-border link-border_dark">Новая регистрация</span></a>
+            </form>
+            </div>
+
+    			<div class="user-bar-item">
+    		    	<a class="backet-link popup-link" href="#" aria-label="Корзина">Пусто</a>
+          </div>
+          </div>
+
+      	<div class="dropdown">
+    		<p class="timeline">
+          <span class="time">С 10 до 20, ежедневно</span>
+    		  <span class="phone"> 8 812 450-25-25</span>
+        </p>
+        </div>
+        </header>
 
     <section class="slider">
     	<h1 class="visually-hidden">Магазин Глейси</h1>
@@ -95,7 +113,7 @@
         </li>
       </ul>
     </section>
-      <main class="container">
+      <main>
     	<div class="banner">
     	<section class="razz">
     		<h3>Малинка даром!</h3>
@@ -116,27 +134,29 @@
               <span class="catalog-item-hit"></span>
     				<img class="catalog-item-img" src="img/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
     				<p class="catalog-item-cost">310 &#8381;<span class="kg">/кг</span></p>
-    				 <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой cтружкой
-                     </a>
+             <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой cтружкой</a>
+             <button class="button catalog-button" type="button">Быстрый просмотр</button>
     			</li>
     			<li class="catalog-item">
             <span class="catalog-item-hit"></span>
     				<img  src="img/2.jpg"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
     				<p class="catalog-item-cost">380 &#8381;<span class="kg">/кг</span></p>
-    				 <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада
-                     </a>
+             <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
+             <button class="button catalog-button" type="button">Быстрый просмотр</button>
     			</li>
     			<li class="catalog-item">
               <span class="catalog-item-hit"></span>
     				<img src="img/3.jpg"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
     				<p class="catalog-item-cost">355 &#8381;<span class="kg">/кг</span></p>
-    				 <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+             <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+             <button class="button catalog-button" type="button">Быстрый просмотр</button>
     			</li>
     			<li class="catalog-item">
               <span class="catalog-item-hit"></span>
     				<img src="img/4.jpg"  width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
     				<p class="catalog-item-cost">415 &#8381;<span class="kg">/кг</span></p>
-    				 <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
+             <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
+             <button class="button catalog-button" type="button">Быстрый просмотр</button>
     			</li>
     		</ul>
     	</section>
@@ -146,8 +166,8 @@
     		<h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
 
     			<p class="info-page-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-    			<p class="info-page-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
-    			<p class="info-page-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p class="info-page-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p class="info-page-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
     			<p class="info-page-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 
     	</section>
@@ -171,21 +191,25 @@
     	</div>
         </div>
       </main>
-
+</div>
         <div class="contact-info">
-        	<img src="img/map.jpg" width="1200" height="430" alt="Карта">
-    	<section class="contacts">
+          <img class="map" src="img/map.jpg" width="1200" height="430" alt="Карта">
+         <section class="contacts">
     		<h2 class="visually-hidden">Контактная инфоромация </h2>
-    		<p> Адрес главного офиса и офлайн-магазина:<br>
-    			<span class="contact">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-    		</p>
+        <p> Адрес главного офиса<br>
+          и офлайн-магазина:<br>
+          <span class="contact">ул. Большая Конюшенная<br>
+             19/8, Санкт-Петербург</span>
+        </p>
+
+
     		<p>Для заказов по телефону:<br>
     			<span class="contact">8 812 450-25-25</span><br>
     			(с 10 до 20 ежедневно)
     		</p>
     		<button class="button contacts-botton">Форма обратной связи</button>
   	  	</section>
-  	  	</div>
+        </div>
 
 
     <footer class="main-footer">
@@ -211,11 +235,11 @@
           <a class="provider" href="#">Для поставщиков</a>
        </li>
        <li class="general-info-item">
-          <a href="#">О производстве</a>
-       </li>
-       <li class="general-info-item">
           <a href="#">Наши документы</a>
        </li>
+       <li class="general-info-item">
+        <a href="#">О производстве</a>
+     </li>
        <li class="general-info-item">
           <a href="#">Экологические стандарты</a>
        </li>
@@ -248,6 +272,5 @@
     	<button class="modal-close" type="button">Закрыть</button>
     </section>
 </div>
-</div>
-  </body>
+</body>
 </html>
